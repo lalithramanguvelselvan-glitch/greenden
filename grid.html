@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="Header">
+        <p>Header</p>
+    </div>
+    <div class="middle">
+        <div class="Aside">
+            <p>Aside</p>
+        </div>
+        <div class="Artical">
+            <p>Artical</p>
+            <div class="img">
+                <P>Image</P>
+            </div>
+             <div class="img">
+                <P>Image</P>
+            </div>
+             <div class="img">
+                <P>Image</P>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</div>
+<style>
+    .container{
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr
+    }
+    .header{
+        background-color:skyblue;
+        color:white;
+        text-align: center;
+        padding: 5px;
+    }
+    .middle{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    .Aside{
+        background-color: greenyellow;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Artical{
+        background-color: orange;
+        color: white;
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .img{
+        background-color: yellow;
+        height: 50px;
+        display:inline;
+    }
+    .img p{
+        gap:10px;
+        height: 50px;
+        color: black;
+    }
+    .footer{
+        background-color: aqua;
+        color: white;
+        text-align: center;
+    }
+    .container{
+        border: solid black 2px;
+    }
+</style>
